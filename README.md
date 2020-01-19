@@ -1,20 +1,20 @@
-# plot moving avarage
-use Quandl for plot moving avarage
+# plot moving average
+use Quandl for plot moving average
 
 # API reference
 https://docs.quandl.com/
 
 # How to use this repository
-git clone https://github.com/kujira-f/plotMovingAvarege.git
+git clone https://github.com/kujira-f/plotMovingAverage.git
 
-cd plotMovingAvarege
+cd plotMovingAverage
 
-python3 plotMovingAvarege.py
+python3 plotMovingAverage.py
 
 # How to push GitHub
-git clone https://github.com/kujira-f/plotMovingAvarege.git
+git clone https://github.com/kujira-f/plotMovingAverage.git
 
-cd plotMovingAvarege
+cd plotMovingAverage
 
 git status
 
@@ -31,7 +31,7 @@ git commit -m "test"
 
 git status
 
-git remote set-url origin https://kujira-f@github.com/kujira-f/plotMovingAvarege.git
+git remote set-url origin https://kujira-f@github.com/kujira-f/plotMovingAverage.git
 
 git push origin test
 

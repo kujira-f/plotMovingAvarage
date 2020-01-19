@@ -1,0 +1,2 @@
+# plotMovingAvarage
+plot moving avarage

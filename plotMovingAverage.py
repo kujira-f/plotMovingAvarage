@@ -11,16 +11,16 @@ plt.rcParams['font.size'] = 12
 plt.rcParams['axes.linewidth'] = 1.0
 plt.rcParams['font.family'] =  'Times New Roman'
 
-quandl.ApiConfig.api_key = 'xxxxxxxxxxxx'
-quandl_data = quandl.get("TSE/7203")
-quandl_data.to_csv('TSE_7203.csv')
-
 code = 7203
+
+quandl.ApiConfig.api_key = 'xxxxxxxxxxxx'
+quandl_data = quandl.get("TSE/" + str(code))
+quandl_data.to_csv('TSE_' + str(code) + '.csv')
 
 x = []
 y = []
 
-data =  pd.read_csv('TSE_7203.csv')
+data =  pd.read_csv('TSE_' + str(code) + '.csv')
 a =list(pd.to_datetime(data.iloc[:,0], format='%Y-%m-%d'))
 x += a[::-1]
 b = list(data.iloc[:,4])
